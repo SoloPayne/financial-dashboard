@@ -1,13 +1,109 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>FinancialDashboard</title>
-  <base href="/">
+<meta charset="utf-8">
+  <title>Join Us</title>
+  <link rel="shortcut icon" href="images/ddf.png" src="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="">
+  <meta name="SoloPayne" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- <link id="themecss" rel="stylesheet" type="text/css" href="https://shieldui.com/shared/components/latest/css/dark/all.min.css" /> -->
+  <script type="text/javascript" src="https://shieldui.com/shared/components/latest/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+  <!-- <script src="./index.js" type="text/javascript"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.cod-flex align-items-center justify-content-centerm/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script> -->
+
 </head>
 <body>
   <app-root></app-root>
+
+
+  <script type="text/javascript">
+    $(function() {
+      $("#chart").shieldChart({
+        theme: "light",
+        exportOptions: {
+          image: false,
+          print: false
+        },
+        primaryHeader: {
+          text: ""
+        },
+        chartLegend: {
+          enabled: true
+        },
+        // seriesSettings: {
+        //     pie: {
+        //         enablePointSelection: true
+        //     }
+        // },
+        dataSeries: [{
+          seriesType: "pie",
+          // collectionAlias: "Usage",
+          data: [
+            ["PAYE", 47.1],
+            {
+              collectionAlias: "Direct Taxes",
+              y: 26.8,
+              selected: true
+            },
+            ["CGT", 11.4],
+            ["Stamp Duty", 8.8],
+            ["WHT", 14.6]
+          ]
+        }]
+      });
+    });
+
+    $(function() {
+      $("#chart2").shieldChart({
+        theme: "light",
+        exportOptions: {
+          image: false,
+          print: false
+        },
+        primaryHeader: {
+          text: ""
+        },
+        chartLegend: {
+          enabled: true
+        },
+        // seriesSettings: {
+        //     pie: {
+        //         enablePointSelection: true
+        //     }
+        // },
+        dataSeries: [{
+          seriesType: "bar",
+          // collectionAlias: "Usage",
+          data: [
+            ["PAYE", 47.1],
+            {
+              collectionAlias: "Direct Taxes",
+              y: 26.8,
+              selected: true
+            },
+            ["CGT", 11.4],
+            ["Stamp Duty", 8.8],
+
+          ]
+        }]
+      });
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,1 +1,452 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./assets/variables.css");
+
+
+    html * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F2F2F2;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--text-dark);
+    }
+
+    .text-dim {
+      color: var(--text-dim);
+    }
+
+    .header {
+      background-color: #13222C;
+      height: 50vh;
+    }
+
+    .text-green {
+      color: var(--text-green);
+    }
+
+    .btn-dark:hover {
+      background-color: #02183D;
+      opacity: 0.9;
+      color: #fff;
+    }
+
+    .dashboard-wrapper {
+      margin: -5rem 2rem;
+    }
+
+    .card {
+      box-shadow: 0px 5px 20px rgba(2, 22, 45, 0.05);
+      border-radius: 10px;
+    }
+
+    .card-logo {
+      width: 60%;
+    }
+
+    .card-header {
+      background-color: #ffffff;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+
+    .card-text {
+      font-size: 12px;
+      margin: 0 2rem;
+    }
+
+    .card-logo {
+      width: 80%;
+    }
+
+    /* .wrapper{
+      margin: 0 5rem;
+    } */
+    .pointer {
+      cursor: pointer;
+    }
+
+    .button {
+      width: 95%;
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+
+    .heading-text {
+      font-size: 14px;
+      font-weight: 500;
+      text-align: left;
+      margin: 0;
+    }
+
+    .smallest-heading-text {
+      font-size: 12px;
+      font-weight: 500;
+      text-align: left;
+      margin: 0;
+    }
+
+    .heading-icon {
+      width: 35px;
+      height: 35px;
+      background: #109618;
+      border-radius: 30px;
+      /* border: 2px solid #109618; */
+    }
+
+    .smallest-heading-icon {
+      width: 25px;
+      height: 25px;
+      background: #02183D25;
+      border-radius: 30px;
+    }
+
+    .heading-icon-yellow {
+      width: 35px;
+      height: 35px;
+      background: #FF9900;
+      border-radius: 30px;
+    }
+
+    .heading-icon-purple {
+      width: 35px;
+      height: 35px;
+      background: #990099;
+      border-radius: 30px;
+    }
+
+    .heading-icon .material-symbols-rounded {
+      color: #fff;
+    }
+
+    .heading-icon-yellow .material-symbols-rounded {
+      color: #fff;
+    }
+
+    .heading-icon-purple .material-symbols-rounded {
+      color: #fff;
+    }
+
+    .smallest-heading-icon .material-symbols-rounded {
+      color: #13222C;
+      font-size: 14px;
+    }
+
+
+
+    .middle-div {
+      margin: 24px 0 10px 0;
+    }
+
+    .middle-text-cover,
+    .bottom-text-cover {
+      padding: 0;
+    }
+
+    .middle-text {
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .bottom-text {
+      font-size: 10px;
+      font-weight: 500;
+      text-align: left;
+      margin-top: auto;
+    }
+
+    .bottom-icon {
+      margin: auto .3rem 0 0;
+    }
+
+    .material-symbols-rounded {
+      font-size: 18px;
+      color: var(--text-green);
+    }
+
+    .btn-outline-light:hover .material-symbols-rounded {
+      color: var(--text-dark) !important;
+    }
+
+    .btn-outline-light:focus .material-symbols-rounded {
+      color: var(--text-dark) !important;
+    }
+
+    .navigate .btn-outline-light {
+      border: 0;
+    }
+
+    .navigate .btn-outline-light:hover .material-symbols-rounded {
+      color: var(--text-dark) !important;
+    }
+
+    .navigate .btn-outline-light:focus .material-symbols-rounded {
+      color: var(--text-dark) !important;
+    }
+
+    .smaller {
+      font-size: 12px;
+    }
+
+    .smaller-price {
+      font-size: 12px;
+      color: var(--text-green);
+    }
+
+    .hr {
+      border: 1px dashed #21212150;
+    }
+
+    .assessment-col {
+      margin: 20px 0 0;
+    }
+
+    .notification>.rounded-circle {
+      background-color: #ffffff50;
+    }
+
+    .offcanvas-notification>.rounded-circle {
+      background-color: #13222C20;
+    }
+
+    .hr-header {
+      transform: translate(90deg);
+      border: 1px solid #fff;
+      height: 30px;
+      border-radius: 30px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    #chart,
+    #chart2 {
+      padding: 0;
+      height: 282px;
+      text-align: center;
+    }
+
+    /* sidebar css */
+    .dropdown-toggle {
+      outline: 0;
+    }
+
+    .btn-toggle {
+      padding: .25rem .5rem;
+      font-weight: 600;
+      color: #13222C;
+      background-color: transparent;
+    }
+
+    .btn-toggle:hover,
+    .btn-toggle:focus {
+      color: rgba(var(--bs-emphasis-color-rgb), .85);
+      background-color: var(--bs-tertiary-bg);
+    }
+
+    .btn-toggle::after {
+      width: 1.25rem;
+      line-height: 0;
+      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+      transition: transform .35s ease;
+      transform-origin: .5em 50%;
+    }
+
+    [data-bs-theme="dark"] .btn-toggle::after {
+      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    }
+
+    .btn-toggle[aria-expanded="true"] {
+      color: rgba(var(--bs-emphasis-color-rgb), .85);
+    }
+
+    .btn-toggle[aria-expanded="true"]::after {
+      transform: rotate(90deg);
+    }
+
+    .btn-toggle-nav a {
+      padding: .1rem 2rem;
+      margin-top: .5rem;
+      margin-left: 1.25rem;
+      width: calc(100% - 1.25rem);
+    }
+
+    .btn-toggle-nav a:hover,
+    .btn-toggle-nav a:focus {
+      background-color: #ddd;
+    }
+
+    .nav-item {
+      /* padding: .2rem 2rem; */
+      /* margin-top: 1rem; */
+      /* margin-left: 1.25rem; */
+      width: 240px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-item a,
+    .nav-link a,
+    .nav-link-icon {
+      color: #13222C;
+    }
+
+    .nav-item a:hover,
+    .nav-item a:focus {
+      background-color: #F2F2F270;
+    }
+
+    .nav-link {
+      padding: 1rem .5rem;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      grid-column-gap: 15px;
+    }
+
+    .nav-link-icon {
+      font-size: 25px;
+    }
+
+    .welcome-text .text h3 {
+      color: #fff;
+      display: inline-flex;
+      /* margin: 50px .2rem 5px; */
+    }
+
+    .date-dropdown-menu {
+      min-width: max-content;
+      transition: all .8s ease-in-out;
+      transform: rotateY(180deg);
+      border-radius: 10px !important;
+    }
+
+    .dropdown-menu {
+      min-width: max-content;
+      z-index: 10;
+      transition: all .8s ease-in-out;
+      border-radius: 10px !important;
+      background-color: #fff;
+    }
+
+    .navigate {
+      position: relative;
+      z-index: 2;
+      height: 4rem;
+      overflow-y: hidden;
+    }
+
+    .navigate .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .modal-adjust {
+      top: 5rem;
+      margin: 2rem !important;
+    }
+
+    @media (min-width: 576px) {
+      .modal-dialog {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    .modal-navigation .nav-item .link {
+      font-size: 12px;
+      padding: .3rem .2rem;
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .modal-navigation .nav-item .link:before {
+      content: '\00bb';
+      /* margin: 0 .2rem; */
+      font-size: 16px;
+      opacity: 0;
+    }
+
+    .modal-navigation .nav-item:hover .link {
+      padding-left: 10px;
+    }
+
+    .modal-navigation .nav-item:hover .link:before {
+      opacity: 1;
+      right: 0;
+    }
+
+     .one{
+      position: absolute;
+      top: 10px;
+      right: 7rem;
+    }
+
+    .two{
+      position: absolute;
+      top: 10px;
+      right: 10rem;
+    }
+
+    .three{
+      position: absolute;
+      top: 10px;
+      right: 3rem;
+    }
+
+    .four{
+      position: absolute;
+      top: 10px;
+      right: 6rem;
+    }
+
+    /* Scrollbar css */
+
+    /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #70A6E850;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #70A6E8;
+}
